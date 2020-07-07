@@ -6,6 +6,7 @@
 package com.prabin.web.entity;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -15,6 +16,7 @@ import javax.persistence.Table;
  *
  * @author Prasbin
  */
+@Entity
 @Table(name = "mst_social_media")
 public class Social {
     @Id
