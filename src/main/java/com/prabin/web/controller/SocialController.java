@@ -37,6 +37,7 @@ public class SocialController {
     }
     
     @GetMapping(value = "/json")
+    @ResponseBody
     public List<Social> json(){
         return repository.findAll();
     }
