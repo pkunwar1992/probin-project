@@ -36,7 +36,7 @@ public class SocialController {
         return "<h1>CREATED.....</h1>";
     }
     
-    @GetMapping
+    @GetMapping(value = "/json")
     public List<Social> json(){
         return repository.findAll();
     }
